@@ -1,33 +1,34 @@
+/* Center everything in the app */
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensure the app takes the full height of the viewport */
+  background-color: #000;
+  color: white;
 }
 
+/* Adjust the logo size if needed */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+/* Add animation for the logo */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
+/* Styling for links */
 .App-link {
   color: #61dafb;
 }
 
+/* Keyframes for spinning logo */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +36,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Styling for the coin image */
+.Coin img {
+  width: 100px; /* Adjust the width of the coin */
+  height: 100px; /* Adjust the height of the coin */
+  object-fit: contain; /* Ensures the image scales properly */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Optional: Add some spacing around the coin image */
+.Coin {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

@@ -1,0 +1,17 @@
+/* Coin.css */
+
+/* Center the coin image within its container */
+.Coin img {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px; /* Adjusted size for a smaller coin */
+    height: auto;
+  }
+  
+  /* Optionally, you can add some spacing around the coin image */
+  .Coin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
